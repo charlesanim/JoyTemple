@@ -445,12 +445,20 @@ p {
     color: black;
 }
 .carousel .carousel-item{
-    height: 300px;
+    height: 600px;
+    width: 960PX;
 }
 .carousel-item img {
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
-    min-height: 300px;
+    min-height: 600px;
+    min-width: 960px;
 }
-
+.dropdown .dropdown-menu .dropdown-item a :hover {
+    background: #f96332;
+    color: #f96332;
+    border-radius: 0;
+    border: 0;
+    display: block
+}
