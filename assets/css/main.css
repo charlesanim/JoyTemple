@@ -433,32 +433,31 @@ h2 {
 p {
 	font-size: 14px;
 }
-.navbar .navbar-nav .nav-link a:hover {
-	background: #27A967;
+.navbar .navbar-nav .nav-link a:hover nav-item {
+	background: #18ce0f;
 	margin-bottom: 0;
     border: 0;
+    font-size: 24px;
+    font-display: auto;
+    font-weight: 400;
 }
 .footer {
 
     font-weight: bold;
     background-color: green;
     color: black;
+    font-family:cursive;
 }
-.carousel .carousel-item{
-    height: 600px;
-    width: 960PX;
-}
-.carousel-item img {
-    position:absolute;
-    top: 0;
-    left: 0;
-    min-height: 600px;
-    min-width: 960px;
-}
-.dropdown .dropdown-menu .dropdown-item a :hover {
-    background: #f96332;
-    color: #f96332;
+
+.dropdown a:hover  {
+    color: #18ce0f;
     border-radius: 0;
     border: 0;
-    display: block
+    display: block;
+    position: relative;
+}
+#wrapper {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
 }
