@@ -353,6 +353,7 @@
 }
 .section-download .description{
     margin-bottom: 60px;
+    font-weight: 20px;
 }
 .section-download h4{
     margin-bottom: 25px;
@@ -379,9 +380,9 @@
 }
 
 .brand .h1-seo{
-    font-size: 2.8em;
+    font-size: 2.9em;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
 }
 .brand .n-logo{
     max-width: 100px;
@@ -441,12 +442,13 @@ p {
     font-display: auto;
     font-weight: 400;
 }
-.footer {
+.footer a:hover{
 
     font-weight: bold;
-    background-color: green;
-    color: black;
-    font-family:cursive;
+    color: #18ce0f;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: auto;
 }
 
 .dropdown a:hover  {
@@ -456,8 +458,9 @@ p {
     display: block;
     position: relative;
 }
-#wrapper {
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-iteration-count: infinite;
+.index-page .section {
+    background-color: aliceblue;
+}
+body{
+    background-color: aliceblue;
 }
