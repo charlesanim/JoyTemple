@@ -1979,7 +1979,7 @@ body {
   top: -4px; }
 .navbar .navbar-nav .nav-link {
   text-transform: uppercase;
-  font-size: 0.7142em;
+  font-size: 14px;
   padding: 0.5rem 0.7rem;
   line-height: 1.625rem; }
 .navbar .navbar-nav .nav-link i.fa + p, .navbar .navbar-nav .nav-link i.now-ui-icons + p {

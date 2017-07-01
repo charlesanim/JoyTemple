@@ -431,14 +431,11 @@ h1,
 h2 {
 	font-weight: bold;
 }
-p {
-	font-size: 14px;
-}
 .navbar .navbar-nav .nav-link a:hover nav-item {
 	background: #18ce0f;
 	margin-bottom: 0;
     border: 0;
-    font-size: 24px;
+    font-size: 14px;
     font-display: auto;
     font-weight: 400;
 }
