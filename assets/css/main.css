@@ -455,7 +455,7 @@ h2 {
     position: relative;
 }
 .index-page .section {
-    background-color: aliceblue;
+    background-color: #ffffff;
 }
 body{
     background-color: aliceblue;
@@ -465,44 +465,7 @@ body{
 
     color: #18ce0f;
 }
-.footer-scroll-top {
-  z-index: 100;
-  display: none;
-  position: fixed;
-  right: 22px;
-  bottom: 22px;
-}
-.footer-scroll-top.footer-scroll-higher {
-  bottom: 61px;
-}
-.footer-scroll-top:not(.window-scrolled) {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-.window-scrolled .footer-scroll-top {
-  opacity: 1;
-  display: block;
-  -webkit-animation-name: alpha-in;
-  -moz-animation-name: alpha-in;
-  -o-animation-name: alpha-in;
-  animation-name: alpha-in;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-}
-.hide-scrollup .footer-scroll-top {
-  display: block;
-}
-.footer-scroll-top i {
-  border-radius: 2px;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
-}
-.window-scrolled .footer-scroll-top:hover {
-  opacity: .8;
+.description{
+    font-size: 24px;
+
 }
