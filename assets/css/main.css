@@ -526,11 +526,14 @@ body{
   }
 }
 
-/* media queries for icon-scroll */
+/* media queries for classes */
 
 @media (min-width: 320px) and (orientation: portrait) {
     .icon-scroll {
         top: 75%;
+    }
+    .footer nav{
+        float: none;
     }
 }
 
@@ -538,11 +541,17 @@ body{
     .icon-scroll {
         top: 75%;
     }
+    .footer nav{
+        float: none;
+    }
 }
 
 @media (min-width: 360px) and (orientation: landscape) {
     .icon-scroll {
         top: 70%;
+    }
+    .footer nav{
+        float: left;
     }
 }
 
@@ -550,11 +559,17 @@ body{
     .icon-scroll {
         top: 95%;
     }
+    .footer nav {
+        float: left;
+    }
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
     .icon-scroll {
         top: 75%;
+    }
+    .footer nav{
+        float: left;
     }
 }
 @media (min-width: 1200px) {
@@ -563,6 +578,9 @@ body{
     }
 }
 
-.small {
-    top: 50%;
+#love-icon {
+    font-size: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+    color: red;
 }

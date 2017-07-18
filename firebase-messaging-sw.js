@@ -16,7 +16,7 @@ firebase.initializeApp({
   'messagingSenderId': '664076663523'
 });
 
-const messaging = firebase();
+const messaging = firebase.messaging();
 
 messaging.setBackgroundMessageHandler(function(payload) {
   console.log('[firebase-messaging-sw.js] Received background message ', payload);
@@ -24,7 +24,7 @@ messaging.setBackgroundMessageHandler(function(payload) {
   //notification here
   const notificationTitle = 'Background Message Title';
   const notificationOptions = {
-  body: 'Background Message body.',
+  body: 'ICGC-Joy Temple, CT, Raising Leaders, Shaping Visions and Human Dignity',
   icon: 'assets/img/logo.png'
 };
 
@@ -49,6 +49,7 @@ Authorization: key=AAAAmp4NuuM:APA91bEz5N9tt5NFbVEfxnRujVgTgFf9sG2iCE_lTUlhj5T__
     "title": "Background Message Title",
     "body": "Background message body",
     "click_action" : "https://joytemple-34f86.firebaseapp.com"
+    icon: 'assets/img/logo.png'
   },
 
   "to" : "eEz-Q2sG8nQ:APA91bHJQRT0JJ..."
