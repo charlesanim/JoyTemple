@@ -3924,7 +3924,9 @@ Created using IcoMoon - icomoon.io
     margin-right: 0; }
 
   .footer .copyright {
-    text-align: center; }
+    text-align: center;
+    padding: 10px;
+    }
 
   .section-nucleo-icons .icons-container i {
     font-size: 30px; }
