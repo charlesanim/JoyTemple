@@ -12,6 +12,13 @@
     display: block;
     width: 100%;
 }
+
+.g-recaptcha {
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+
 .typography-line span{
     bottom: 10px;
     color: #c0c1c2;
