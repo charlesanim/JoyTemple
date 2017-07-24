@@ -591,3 +591,6 @@ body{
 	margin-right: 2px;
     color: red;
 }
+.separator.separator-success {
+    background-color: #096d04;
+}
