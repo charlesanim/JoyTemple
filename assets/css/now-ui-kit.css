@@ -1761,16 +1761,16 @@ p.description {
   border: 1px solid #B8B8B8;
   padding: 20px;
   font-size: 1.1em;
-  line-height: 1.8; }
+  line-height: 1.8;
+  border-color: #096d04;
+  color: #096d04;
+}
 .blockquote small {
   color: #B8B8B8;
   font-size: 0.8571em;
   text-transform: uppercase; }
-.blockquote.blockquote-primary {
-  border-color: #f96332;
-  color: #f96332; }
-.blockquote.blockquote-primary small {
-  color: #f96332; }
+.blockquote small {
+  color: #096d04; }
 .blockquote.blockquote-danger {
   border-color: #FF3636;
   color: #FF3636; }

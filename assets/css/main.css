@@ -594,3 +594,11 @@ body{
 .separator.separator-success {
     background-color: #096d04;
 }
+
+ul.description {
+        font-size: 1.14em;
+        text-align: left;
+}
+#belief {
+    text-align: left
+}
