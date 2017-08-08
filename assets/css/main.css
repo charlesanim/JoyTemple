@@ -492,12 +492,10 @@ body{
   height: 40px;
   margin-left: -20px;
   top: 85%;
-  margin-top: -35px;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+  margin-top: -15px;
   border-radius: 25px;
 }
 .icon-scroll:before {
-  content: '';
   width: 6px;
   height: 6px;
   background: #fff;
@@ -505,32 +503,6 @@ body{
   bottom: 4px;
   top: 8px;
   border-radius: 4px;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
-}
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
-  }
-}
-@keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
-  }
 }
 
 /* media queries for classes */
@@ -591,6 +563,15 @@ body{
 	margin-right: 2px;
     color: red;
 }
+#angle {
+    font-size: 40px;
+	margin-left: 2px;
+	margin-right: 2px;
+    color: lawngreen;
+}
+#green {
+    text-shadow:-2px 0 #096d04, 0 2px #096d04, 2px 0 #096d04, 0 -2px #096d04;
+}
 .separator.separator-success {
     background-color: #096d04;
 }
@@ -602,3 +583,45 @@ ul.description {
 #belief {
     text-align: left
 }
+/*arrow bounce*/
+.bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+/* Scroll down indicator (bouncing) */
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px); } }
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px); } }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+/*arrow down end*/

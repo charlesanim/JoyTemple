@@ -1,9 +1,8 @@
 {
-  "name": "ICGC - Joy Temple, CT",
+  "name": "ICGC Joy Temple",
   "short_name": "Joy Temple",
   "description": "ICGC - Joy Temple, CT",
   "lang": "en-US",
-  "start_url": "/index.html",
   "display": "standalone",
   "theme_color": "#096d04",
   "background_color": "#096d04",
@@ -33,6 +32,7 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+    "start_url": "index.html?launcher=true"
 }
 
