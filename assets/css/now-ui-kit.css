@@ -3054,6 +3054,13 @@ Created using IcoMoon - icomoon.io
 .profile-page .gallery {
   margin-top: 45px;
   padding-bottom: 50px; }
+.gallery {
+    margin-top: 45p;
+    padding-bottom: 50px;
+}
+.card{
+    margin-bottom: 30px;
+}
 
 .section-full-page:after, .section-full-page:before {
   display: block;
