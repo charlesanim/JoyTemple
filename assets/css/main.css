@@ -572,6 +572,12 @@ body{
 #green {
     text-shadow:-2px 0 #096d04, 0 2px #096d04, 2px 0 #096d04, 0 -2px #096d04;
 }
+#top{
+    top: 90%;
+}
+#bottom{
+    top: 50%;
+}
 .separator.separator-success {
     background-color: #096d04;
 }
