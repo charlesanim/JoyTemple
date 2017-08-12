@@ -26,3 +26,4 @@ console.log(token);
 messaging.onMessage(function(payload) {
     console.log('onMessage: ', payload);
 });
+
