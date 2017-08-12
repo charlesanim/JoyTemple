@@ -22,3 +22,7 @@ console.log(token);
 .catch(function(err) {
     console.log('Error Occured' , err);
 })
+
+messaging.onMessage(function(payload) {
+    console.log('onMessage: ', payload);
+});
