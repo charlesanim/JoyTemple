@@ -2,8 +2,10 @@
 
 var cacheVersion = 1;
 var currentCache = {
-  offline: 'offline-cache' + cacheVersion
+  offline: 'offline-cache' + cacheVersion,
+  storage: 'storage-cache' + cacheVersion    
 };
+
 const offlineUrl = 'offline-page.html';
 
 this.addEventListener('install', event => {
@@ -12,6 +14,20 @@ this.addEventListener('install', event => {
       return cache.addAll([
           'assets/img/offline.svg',
           offlineUrl
+      ]);
+    })
+  );
+});
+
+this.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(currentCache.storage).then(function(cache) {
+      return cache.addAll([
+          'assets',
+          'page2w.html',
+          'page3w.html',
+          'mothersday.html',
+          'favicon.ico'
       ]);
     })
   );

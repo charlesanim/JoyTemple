@@ -1,0 +1,10 @@
+{
+    "to": "e7PaSAMxRtk:APA91bEyeZbxacp4RnSwxLjr9wNsT-TNXhoermJpBm3MZp3rDW3rYEMIwkpZogNoOOStz3wYP0LPh4fHtarDAXo3A-fwqxmqExx0hmuemXJgvcAtA8V6y9HxY1CifNkMQ-vYxH343KVh"
+    "notification": {
+     "title": "ICGC Joy Temple",
+     "body": "God is King",
+     "icon": "assets/img/logo-3x.png"
+    }
+}
+
+curl --header

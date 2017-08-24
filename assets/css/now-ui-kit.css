@@ -3390,7 +3390,7 @@ Created using IcoMoon - icomoon.io
   background-color: #e95e38; }
 
 [data-background-color="black"] {
-  background-color: #096d04; }
+  background-color: rgba(24, 31, 24, 0.8); }
 
 [data-background-color] {
   color: #FFFFFF; }

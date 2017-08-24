@@ -28,24 +28,76 @@
     <!-- CSS-->
     <link href="../assets/css/main.css" rel="stylesheet" />
     <link rel="manifest" href="manifest.json">
-    <script type="text/javascript">
-        window.heap = window.heap || [], heap.load = function(e, t) {
-            window.heap.appid = e, window.heap.config = t = t || {};
-            var r = t.forceSSL || "https:" === document.location.protocol,
-                a = document.createElement("script");
-            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
-            var n = document.getElementsByTagName("script")[0];
-            n.parentNode.insertBefore(a, n);
-            for (var o = function(e) {
-                    return function() {
-                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-                    }
-                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
-        };
-        heap.load("873798713");
-
-    </script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- Start of Async Drift Code -->
+<script>
+    ! function() {
+        var t;
+        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+            t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+            t.factory = function(e) {
+                return function() {
+                    var n;
+                    return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                };
+            }, t.methods.forEach(function(e) {
+                t[e] = t.factory(e);
+            }), t.load = function(t) {
+                var e, n, o, i;
+                e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+                    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+                    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+            });
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('i75z3zgpyp6z');
+</script>
+<!-- End of Async Drift Code -->
+<script>
+  (function() {
+    /* Add this class to any elements you want to use to open Drift.
+     *
+     * Examples:
+     * - <a class="drift-open-chat">Questions? We're here to help!</a>
+     * - <button class="drift-open-chat">Chat now!</button>
+     *
+     * You can have any additional classes on those elements that you
+     * would ilke.
+     */
+    var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+    /* http://youmightnotneedjquery.com/#ready */
+    function ready(fn) {
+      if (document.readyState != 'loading') {
+        fn();
+      } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', fn);
+      } else {
+        document.attachEvent('onreadystatechange', function() {
+          if (document.readyState != 'loading')
+            fn();
+        });
+      }
+    }
+    /* http://youmightnotneedjquery.com/#each */
+    function forEachElement(selector, fn) {
+      var elements = document.querySelectorAll(selector);
+      for (var i = 0; i < elements.length; i++)
+        fn(elements[i], i);
+    }
+    function openSidebar(driftApi, event) {
+      event.preventDefault();
+      driftApi.sidebar.open();
+      return false;
+    }
+    ready(function() {
+      drift.on('ready', function(api) {
+        var handleClick = openSidebar.bind(this, api)
+        forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+          el.addEventListener('click', handleClick);
+        });
+      });
+    });
+  })();
+</script>
 </head>
 
 <body class="index-page">
@@ -65,7 +117,7 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="https://res.cloudinary.com/charlesanim/image/upload/s--Rl6gm9DK--/c_scale,h_70,q_jpegmini,w_70/v1499039328/JOY%20Temple/logo.png">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" id="green" href="/index.html">
                             Home
                         </a>
@@ -75,7 +127,7 @@
                             About Us
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" id="green" href="/media.html">
                             Media
                         </a>
@@ -176,9 +228,9 @@
                            <div class="tab-pane fade show active" id="videos" role="tabpanel">
                             <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="card" style="width: 20rem;">
-                                                <img class="card-img-top" src="..." alt="">
-                                                <div class="card-block">
+                                            <div class="card card-inverse wow slideInLeft" style="width: 20rem;" data-wow-delay="1s">
+                                                <img class="card-img" src="..." alt="">
+                                                <div class="card-img-overlay">
                                                     <h4 class="card-title">Videos</h4>
                                                     <p class="card-text">Find all of our videos and sermon posts here</p>
                                                     <a href="/videos.html" class="btn btn-success">Click to watch</a>
@@ -190,19 +242,19 @@
                            <div class="tab-pane fade" id="pictures" role="tabpanel">
                             <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="card" style="width: 20rem;">
-                                                <img class="card-img-top" src="https://res.cloudinary.com/charlesanim/image/upload/c_scale,h_852,w_1200/v1502227932/JOY%20Temple/img_logo.jpg" alt="">
-                                                <div class="card-block">
+                                            <div class="card card-inverse wow slideInLeft" style="width: 20rem;">
+                                                <img class="card-img" src="https://res.cloudinary.com/charlesanim/image/upload/c_scale,h_852,w_1200/v1502227932/JOY%20Temple/img_logo.jpg" alt="">
+                                                <div class="card-img-overlay">
                                                     <h4 class="card-title">Joy Gala 2017</h4>
                                                     <p class="card-text">Pictures Coming Soon</p>
                                                     <a href="joygala.html" class="btn btn-success">View</a>
                                                 </div>
                                             </div>
-                                </div>
+                                        </div>         
                                             <div class="col-sm-6">
-                                            <div class="card" style="width: 20rem;">
-                                                <img class="card-img-top" src="assets/img/mensday.jpg" alt="">
-                                                <div class="card-block">
+                                            <div class="card card-inverse wow slideInLeft" style="width: 20rem;" data-wow-delay="0.5s">
+                                                <img class="card-img" src="assets/img/mensday.jpg" alt="">
+                                                <div class="card-img-overlay">
                                                     <h4 class="card-title">Father's Day 2017</h4>
                                                     <p class="card-text">Photos taken from the eve of Father's day bowling event. God bless our women of faith. You're awesome!</p>
                                                     <a href="fathersday.html" class="btn btn-success">View</a>
@@ -210,9 +262,9 @@
                                             </div>
                                             </div>
                                             <div class="col-sm-6">
-                                            <div class="card" style="width: 20rem;">
-                                                <img class="card-img-top" src="assets/img/picollage.jpg" alt="">
-                                                <div class="card-block">
+                                            <div class="card card-inverse wow slideInLeft" style="width: 20rem;" data-wow-delay="1s">
+                                                <img class="card-img" src="assets/img/picollage.jpg" alt="">
+                                                <div class="card-img-overlay">
                                                     <h4 class="card-title">Women's Day 2017</h4>
                                                     <p class="card-text">Pictures taken from the eve of Women's day. Thanks to our men of valor for throwing a nice ball for us. We <i class="fa fa-heart" id="love-icon" aria-hidden="true"></i> you!</p> 
                                                     <a href="mothersday.html" class="btn btn-success">View</a>
@@ -224,9 +276,9 @@
                     <div class="tab-pane fade" id="audio" role="tabpanel">
                             <div class="row">
                                         <div class="col-md-6">
-                                            <div class="card" style="width: 20rem;">
-                                                <img class="card-img-top" src="..." alt="">
-                                                <div class="card-block">
+                                            <div class="card card-inverse wow slideInLeft" style="width: 20rem;" data-wow-delay="1s">
+                                                <img class="card-img" src="..." alt="">
+                                                <div class="card-img-overlay">
                                                     <h4 class="card-title">Audio</h4>
                                                     <p class="card-text">We've taken the time to curate the best audio sermons from our Head Pastor and even some of our favorite Agape Choir music</p>
                                                     <a href="audio.html" class="btn btn-success">View</a>
@@ -252,8 +304,8 @@
                             </a>
                             </li>
                             <li>
-                                <a href="/contactus.html" class="success-text">
-                                CONTACT US
+                                <a href="#" class="drift-open-chat success-text">
+                                CHAT WITH US
                             </a>
                             </li>
                             <li>
