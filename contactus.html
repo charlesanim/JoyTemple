@@ -98,6 +98,19 @@
     });
   })();
 </script>
+<script>
+    drift.on('ready', function(api, payload) {
+       api.hideWelcomeMessage({
+        message:undefined,
+
+            // a string. replaces the default welcome message with a custom one.
+
+             avatarUrl:undefined
+            // a url. replaces the default avatar with a custom one.
+
+       });
+    });
+</script>
 </head>
 
 <body class="index-page">
@@ -173,8 +186,8 @@
     </nav>
     <!-- End Navbar -->
     <div class="wrapper">
-        <div class="page-header page-header-small">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('https://res.cloudinary.com/charlesanim/image/upload/c_scale,h_480,w_960/v1499726650/JOY%20Temple/IMG_1229.png');">
+        <div class="page-header page-header-small" filter-color="grey">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('assets/img/contact.jpg');">
             </div>
             <div class="container">
                 <div class="content-center">
@@ -193,19 +206,19 @@
                 </div>
             </div>
         </div>  
-            <div class="contact-us section-image">
+            <div class="section section-team section-image">
                 <div class="container">
                    <div class="row">
                        <div class="col-md-5">
-                           <h2 class="title">Get in Touch</h2>
-                           <h4 class="description">We'd love to fellowship and get to know you. Remember, when you're here you're family</h4>
+
+                           <p class="description">We'd love to fellowship and get to know you, you can reach us using any of the services below. A member of our onboarding team will be happy to assist you.</p>
                            <div class="info info-horizontal">
                                <div class="icon icon primary">
                                    <i class="now-ui-icons location_pin"></i>
                                </div>
-                               <div class="description">
+                               <div id="black">
                                    <h4 class="info-title">Find our Church at</h4>
-                                   <p class="description">
+                                   <p class="description" id="descript">
                                        ICGC Joy Temple, <br>
                                        100 Long Hill Rd, <br>
                                        South Windsor, CT 
@@ -217,32 +230,46 @@
                                <div class="icon icon primary">
                                    <i class="now-ui-icons tech_mobile"></i>
                                </div>
-                               <div class="description">
+                               <div id="black">
                                    <h4 class="info-title">Give us a ring</h4>
-                                   <p class="description">
+                                   <p class="description" id="descript">
                                        ICGC Joy Temple, <br>
-                                       <a href="tel:1-917-687-4709" class="success-text">917 687-4709</a><br>
+                                       <a href="tel:1-917-687-4709" class="success-text">(917) 687-4709</a><br>
                                        Mon - Sun, 8:00-22:00
                                    </p>
                                </div>
                            </div>
-                       </div>
-                       <div class="col-md-5 offset-md-2">
-                           <div class="card card-contact card-raised">
-                               <div class="card-header text-center">
-                                   <h4 class="card-title">Our Service Times</h4>
+                           <h5 class="text-center" id="black">or</h5>
+                           <div class="info info-horizontal">
+                               <div class="text-center" id="chat">
+                                   <button class="btn btn-success btn-round"><i class="now-ui-icons ui-2_chat-round"></i>
+                                   <a href="#" class="drift-open-chat success">
+                                   Chat with us
+                                   </a>
+                                   </button>
                                </div>
                            </div>
-                           <div class="card-block">
+                       </div>
+                       <div class="col-md-5 offset-md-2">
+                           <div class="card card-contact card-raised" id="stime">
+                               <div class="card-header text-center" id="transparent">
+                                   <h4 class="title" id="transparent">Our Service Times</h4>
+                               </div>
+                           <div class="card-block text-center">
                                <div class="row">
-                                   <div class="col-md-6 pr-2"></div>
-                                   <div class="col-md-6 pl-2"></div>
+                                   <div class="col-md-6 pr-2 titleT" id="top">Sunday Service</div>
+                                   <div class="col-md-6 pl-2 " id="top">9:30am - 11:30am</div>
+                                   <div class="col-md-6 pr-2 titleT" id="top">Wednesday Service</div>
+                                   <div class="col-md-6 pl-2 " id="top">7pm - 8:15pm</div>
+                                   <div class="col-md-6 pr-2 titleT" id="top">Friday Night Service </div>
+                                   <div class="col-md-6 pl-2 " id="top">8pm - 12am</div>
                                </div>
                            </div>
                        </div>
                    </div> 
                 </div>
             </div>
+        </div>
             <!--
            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDjFgiRvkj9hC-PVnl8deMg4qwz1Nc1uHU'></script><div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:1000px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://addmap.net/'>add google maps to website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=4a9111cf675d75bf34194ade259a5272a9da5861'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(41.8045265,-72.5941689),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.8045265,-72.5941689)});infowindow = new google.maps.InfoWindow({content:'<strong>ICGC - Joy Temple</strong><br>100 Long Hill Rd<br>06074  South Windsor<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script> -->
             <footer class="footer" data-background-color="black">

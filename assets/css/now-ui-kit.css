@@ -3254,7 +3254,7 @@ Created using IcoMoon - icomoon.io
   content: ""; }
 .page-header:before {
   background-color: rgba(0, 0, 0, 0.11); }
-.page-header[filter-color="green"] {
+.page-header[filter-color="grey"] {
   background: rgba(44, 44, 44, 0.2);
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(3, 193, 62, 0.6));
@@ -3996,8 +3996,11 @@ Created using IcoMoon - icomoon.io
     color: black;
     margin-top: 30px;
 }
-.section-image, .section-image .info .icon:not(.icon-circle) {
-    color: rgba(18, 148, 17, 0.8);
+.info .icon:not(.icon-circle) {
+    color: #096d04;
+}
+.section-image {
+    color: #da4141;
 }
  .card-description, .footer-big p {
     color: #9A9A9A;
@@ -4015,7 +4018,6 @@ Created using IcoMoon - icomoon.io
 }
 .info-horizontal .icon {
     float: left;
-        margin-top: 50px;
     font-size: large;
 }
 .info-horizontal .description {
@@ -4031,7 +4033,7 @@ Created using IcoMoon - icomoon.io
 }
 .contactus-1 .info .info-title {
     margin-top: 20px;
-    color: #FFFFFF;
+    color: black;
 }
 .contactus-1 .card-contact {
     margin-top: 30px;
@@ -4056,4 +4058,15 @@ Created using IcoMoon - icomoon.io
 .info-horizontal .icon>i {
     font-size: 2em;
 }
+
+#top {
+    padding: 5px 5px 5px 5px;
     
+}
+.titleT {
+    color: black;
+    font-weight: 700;
+}
+#stime {
+    background: #ddea22;
+}
