@@ -519,6 +519,11 @@ body{
         width: 50px;
         height: 50px;
     }
+    .centerM {
+        width: 350px;
+        height: 300px;
+    }
+
 }
 
 @media (min-width: 360px) and (orientation: portrait) {
@@ -532,23 +537,35 @@ body{
         width: 50px;
         height: 50px;
     }
+    .centerM {
+        width: 350px;
+        height: 300px;
+    }
 }
 
-@media (min-width: 360px) and (orientation: landscape) {
+@media  (min-width: 360px) and (orientation: landscape) {
     .icon-scroll {
         top: 70%;
     }
     .footer nav{
         float: left;
     }
+    .centerM {
+        width: 550px;
+        height: 300px;
+    }
 }
 
-@media (min-width: 768px) and (orientation: portrait) {
+@media (max-width: 768px) and (orientation: portrait) {
     .icon-scroll {
         top: 95%;
     }
     .footer nav {
         float: left;
+    }
+    .centerM {
+        width: 400px;
+        height: 300px;
     }
 }
 
@@ -559,10 +576,18 @@ body{
     .footer nav{
         float: left;
     }
+    .centerM {
+        width: 900px;
+        height: 300px;
+    }
 }
 @media (min-width: 1200px) {
     .icon-scroll {
         top: 90%;
+    }
+    .centerM {
+        width: 900px;
+        height: 300px;
     }
 }
 

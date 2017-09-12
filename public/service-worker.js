@@ -22,21 +22,23 @@ limitations under the License.
   '.',
   'assets/css/bootstrap.min.css',
   'assets/css/now-ui-kit.css',
-  'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
   'assets/img/media.jpg',
-  'assets/img/mensday.jpg',        
+  'assets/img/mensday.jpg',
   'assets/img/picollage.jpg',
   'assets/js/now-ui-kit.js',
   'assets/js/core/bootstrap.min.js',
   'assets/js/core/jquery.3.2.1.min.js',
-  'assets/js/core/tether.min.js',        
+  'assets/js/core/tether.min.js',
   'assets/img/logo.png',
+  'assets/img/joy.jpg',
+  'assets/img/back.jpg',
+  'assets/img/contac.jpg',
   'offline-page.html',
   '404.html'
 
 ];
 
-var staticCacheName = 'pages-cache-v2';
+var staticCacheName = 'pages-cache-v1';
 
 self.addEventListener('install', function(event) {
   console.log('Attempting to install service worker and cache static assets');
@@ -71,7 +73,7 @@ self.addEventListener('fetch', function(event) {
     }
     return response;
   });
-});        
+});
 
     }).catch(function(error) {
 
@@ -79,7 +81,7 @@ self.addEventListener('fetch', function(event) {
 
     })
   );
-});    
+});
 
   // TODO 7 - delete unused caches
 self.addEventListener('activate', function(event) {
@@ -98,6 +100,6 @@ self.addEventListener('activate', function(event) {
       );
     })
   );
-});    
+});
 
 })();
